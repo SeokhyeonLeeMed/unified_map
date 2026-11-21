@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="c"><rect width="512" height="512" rx="0"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="512" height="512" fill="#f1ebdc"/>
+    <!-- graticule -->
+    <g stroke="#d9cfb7" stroke-width="3">
+      <path d="M128 0V512M256 0V512M384 0V512M0 128H512M0 256H512M0 384H512"/>
+    </g>
+    <!-- river -->
+    <path d="M-20 404 C 90 370, 150 452, 250 420 S 420 330, 540 368" fill="none" stroke="#7fa7a3" stroke-width="16" stroke-linecap="round"/>
+    <!-- contour hill -->
+    <g fill="none" stroke="#b59f74" stroke-width="7">
+      <path d="M256 70c86 0 176 54 176 150s-78 172-180 172S78 332 82 230 170 70 256 70z"/>
+      <path d="M258 116c64 0 128 40 128 108s-58 124-132 124-128-50-124-118 64-114 128-114z"/>
+      <path d="M260 160c42 0 82 28 82 70s-36 78-86 78-82-32-80-74 42-74 84-74z"/>
+    </g>
+    <path d="M262 200c20 0 38 14 38 34s-18 34-40 34-38-14-38-34 18-34 40-34z" fill="none" stroke="#8c7246" stroke-width="7"/>
+    <!-- route -->
+    <path d="M70 470 C 120 420, 150 330, 256 250" fill="none" stroke="#b4532f" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 22"/>
+    <!-- pin -->
+    <path d="M260 52c-46 0-82 36-82 80 0 58 82 128 82 128s82-70 82-128c0-44-36-80-82-80z" fill="#b4532f"/>
+    <circle cx="260" cy="132" r="30" fill="#f1ebdc"/>
+    <circle cx="260" cy="132" r="12" fill="#1f2a2e"/>
+  </g>
+</svg>

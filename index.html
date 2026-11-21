@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unified Map of SeokhyeonLeeMed GitHub</title>
+<meta name="description" content="SeokhyeonLeeMed가 GitHub Pages로 운영하는 사이트를 한 장의 지도에 모았습니다.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Unified Map">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f1ebdc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131b1f" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sheet">
+
+  <header class="cartouche">
+    <p class="sheet-no mono">SHEET 01 · <span id="count">5</span> SITES · GITHUB PAGES</p>
+    <h1>Unified Map<span class="of"> of </span><span class="who">SeokhyeonLeeMed</span> GitHub</h1>
+    <p class="lede">GitHub Pages로 운영하는 사이트를 한 장의 지도에 모았습니다. 핀이나 범례를 누르면 그 사이트로 갑니다.</p>
+  </header>
+
+  <figure class="map-frame" aria-label="사이트 지도">
+    <svg id="map" viewBox="0 0 1000 540" role="img" aria-labelledby="map-title">
+      <title id="map-title">사이트 다섯 곳의 위치를 표시한 지도</title>
+      <g id="graticule"></g>
+      <g id="water"></g>
+      <g id="contours"></g>
+      <g id="routes"></g>
+      <g id="pins"></g>
+      <g id="furniture"></g>
+    </svg>
+  </figure>
+
+  <section class="legend" aria-labelledby="legend-h">
+    <div class="legend-head">
+      <h2 id="legend-h">범례</h2>
+      <ul class="keys mono" aria-label="기호 설명">
+        <li><span class="sym sym-med" aria-hidden="true"></span>의학</li>
+        <li><span class="sym sym-study" aria-hidden="true"></span>어학</li>
+        <li><span class="sym sym-life" aria-hidden="true"></span>생활</li>
+        <li><span class="sym sym-music" aria-hidden="true"></span>음악</li>
+        <li><svg class="lock-ico" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7.5" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2" fill="none"/></svg>로그인 필요</li>
+      </ul>
+    </div>
+    <ol id="sites" class="sites"></ol>
+  </section>
+
+  <footer class="colophon mono">
+    <span>SeokhyeonLeeMed · github.com/SeokhyeonLeeMed</span>
+    <span id="stamp">SURVEYED 2026-11</span>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
