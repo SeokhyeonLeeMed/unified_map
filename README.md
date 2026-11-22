@@ -29,6 +29,7 @@ SeokhyeonLeeMed가 GitHub Pages로 운영하는 사이트를 한 장의 지도�
 | `general_assistant` (구 `Documents\생활\비서`) | `_publish/` → SeokhyeonLeeMed/general_assistant |
 | `med-map` | SeokhyeonLeeMed/med-map |
 | `fretaid` (구 `fretlab`) | SeokhyeonLeeMed/fretaid |
+| `routine` | `_publish/` → SeokhyeonLeeMed/routine |
 | `unified_map` | 이 사이트 (SeokhyeonLeeMed/unified_map) |
 | `drosophila-simulator` | 로컬 git만 (원격 없음) |
 | `nangbo-site`, `noraeol-session-bot`, `yt-tools`, `입시자료` | git 아님 |
