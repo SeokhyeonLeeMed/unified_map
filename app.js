@@ -36,6 +36,12 @@ const SITES = [
     desc: "기타와 베이스를 위한 인터랙티브 지판. 원하는 튜닝에서 스케일·코드 모양을 찾아 주고, 소리 재생과 마이크 튜너, 6개 언어를 지원합니다.",
     at: [850, 170],
   },
+  {
+    repo: "routine", name: "루틴 점검", kind: "life", locked: true,
+    title: "매일 루틴 체크",
+    desc: "학교 공부·외국어·운동 루틴을 매일 체크하는 사이트. 전공 수업이 있는 날은 과목마다 족보 예습부터 네 단계를 순서대로, 운동은 3D 인체 모형에 자극되는 근육을 칠해 보여 주고 매일 알림을 보냅니다.",
+    at: [900, 385],
+  },
 ];
 
 const KIND = {
@@ -135,7 +141,7 @@ function drawContours(g) {
 
 function drawRoutes(g) {
   const p = SITES.map((s) => s.at);
-  const seq = [0, 1, 2, 3, 4];
+  const seq = [0, 1, 2, 3, 5, 4];
   for (let i = 0; i < seq.length - 1; i++) {
     const a = p[seq[i]], b = p[seq[i + 1]];
     const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2;
